@@ -1,5 +1,13 @@
 .container {
-  width: calc(100% - 40px);
+  width: 320px;
   margin: 0 auto;
-  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 984px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1260px;
+  }
+
 }

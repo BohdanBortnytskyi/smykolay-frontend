@@ -1,5 +1,3 @@
-/* Global */
-
 .page {
   height: 100%;
 }
@@ -11,12 +9,19 @@
   font-family: $basic-regular;
   font-size: 14px;
   line-height: 18px;
-  font-style: normal;
-  font-weight: normal;
   color: $basic-black;
   background-color: $basic-white;
-  background-image: url(../img/bg1920.jpg);
+  background-image: url(../img/bg360.jpg);
+  background-position: center top;
   background-repeat: no-repeat;
-  // background-size: cover;
+  background-size: cover;
   min-height: 100%;
+
+  @media (min-width: $tablet-width) {
+    background-image: url(../img/bg1024.jpg);
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url(../img/bg1920.jpg);
+  }
 }

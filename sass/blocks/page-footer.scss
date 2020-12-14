@@ -1,33 +1,65 @@
 .page-footer {
-  margin-top: 50px;
-  padding-bottom: 20px;
-  width: 1300px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
+  min-height: 230px;
+  margin-top: 30px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    min-height: 150px;
+    margin-top: 50px;
+  }
 }
 
 .page-footer::before {
   content: "";
   position: absolute;
-  width: 1206px;
+  width: 360px;
   height: 1px;
   right: 0px;
-  top: 1730px;
-  background-image: url(../img/footer-line.png);
+  top: 1395px;
+  background-image: url(../img/footer-line-360.png);
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 685px;
+    height: 1px;
+    top: 1610px;
+    background-image: url(../img/footer-line-1024.png);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1206px;
+    height: 1px;
+    top: 1780px;
+    background-image: url(../img/footer-line-1920.png);
+  }
 }
 
 .page-footer img {
-  padding-left: 65px;
+  @media (min-width: $tablet-width) {
+    padding-left: 72px;
+  }
 }
 
 .page-footer__copyright {
-  padding: 0;
   margin: 0;
+  padding: 0;
   text-transform: uppercase;
   color: $basic-white;
   font-family: $basic-bold;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 19px;
+  width: 176px;
+
+  @media (min-width: $tablet-width) {
+    width: 430px;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
