@@ -1,0 +1,33 @@
+.page-footer {
+  margin-top: 50px;
+  padding-bottom: 20px;
+  width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.page-footer::before {
+  content: "";
+  position: absolute;
+  width: 1206px;
+  height: 1px;
+  right: 0px;
+  top: 1730px;
+  background-image: url(../img/footer-line.png);
+  background-repeat: no-repeat;
+}
+
+.page-footer img {
+  padding-left: 65px;
+}
+
+.page-footer__copyright {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  color: $basic-white;
+  font-family: $basic-bold;
+  font-size: 20px;
+  line-height: 24px;
+}

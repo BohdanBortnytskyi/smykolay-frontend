@@ -1,0 +1,35 @@
+.basic-button {
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $button-bg;
+  color: $basic-white;
+  font-family: $basic-bold;
+  font-size: 28px;
+  line-height: 34px;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  border: 5px solid $basic-white;
+  box-sizing: border-box;
+  border-radius: 40px;
+  margin: 0 auto;
+}
+
+.basic-button::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 650px;
+  min-height: 80px;
+  border: 10px solid $basic-yellow;
+  box-sizing: border-box;
+  filter: blur(10px);
+  border-radius: 40px;
+}
+
+.basic-button--main {
+  width: 650px;
+  margin-bottom: 90px;
+}

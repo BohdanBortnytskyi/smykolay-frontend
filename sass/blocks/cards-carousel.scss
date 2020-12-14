@@ -1,0 +1,67 @@
+.cards-carousel {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards-carousel__item {
+  font-family: $basic-bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $basic-white;
+  border: 2px solid $basic-orange-dark;
+  box-sizing: border-box;
+  border-radius: 20px;
+
+  // @media (min-width: $desktop-width) {
+    width: 640px;
+    min-height: 378px;
+    padding: 22px 75px;
+  // }
+}
+
+.cards-carousel__header {
+  margin: 0;
+  padding: 0;
+  font-size: 79px;
+  line-height: 95px;
+  text-transform: uppercase;
+  color: $basic-yellow-dark;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards-carousel__title {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: $basic-blue-dark;
+  font-size: 34px;
+  line-height: 41px;
+}
+
+.cards-carousel__item--second {
+  border: 2px solid $basic-blue;
+}
+
+.cards-carousel__header--second {
+  color: $basic-blue;
+}
+
+.cards-carousel__title--second {
+  color: $basic-blue-middle;
+  font-size: 35px;
+  line-height: 42px;
+}
+
+.cards-carousel__note {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: $basic-blue5;
+  font-size: 23px;
+  line-height: 28px;
+}

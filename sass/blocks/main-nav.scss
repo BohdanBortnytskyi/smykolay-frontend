@@ -1,0 +1,48 @@
+.main-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 40px;
+  }
+}
+
+.main-nav__menu {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+.main-nav__menu-item a {
+  color: $basic-white;
+  font-family: $basic-bold;
+  font-size: 28px;
+  line-height: 34px;
+}
+
+.main-nav__menu-item a:hover {
+  color: $basic-blue;
+}
+
+.main-nav__menu-item--active a {
+  color: $basic-blue;
+}
+
+.main-nav__social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+
+  @media (min-width: $desktop-width) {
+    gap: 40px;
+  }
+}
