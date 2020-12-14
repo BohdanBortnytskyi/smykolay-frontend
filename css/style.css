@@ -93,13 +93,8 @@ img {
 }
 
 .container {
-  width: 320px;
+  width: calc(100% - 40px);
   margin: 0 auto;
-}
-@media (min-width: 1024px) {
-  .container {
-    width: 984px;
-  }
 }
 @media (min-width: 1920px) {
   .container {
@@ -269,18 +264,18 @@ img {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 57px;
 }
 @media (min-width: 1024px) {
   .cards-carousel {
+    gap: 20px;
     margin-top: 56px;
   }
 }
 @media (min-width: 1920px) {
   .cards-carousel {
     margin-top: 97px;
-    gap: 20px;
   }
 }
 
