@@ -435,6 +435,11 @@ img {
     margin-top: 50px;
   }
 }
+@media (min-width: 1024px) {
+  .page-footer {
+    margin-top: 34px;
+  }
+}
 
 .page-footer::before {
   content: "";
